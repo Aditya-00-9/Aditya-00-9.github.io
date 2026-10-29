@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en-IE">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found · Aditya Sharma</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem('theme'); } catch (e) {}
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <style>
+    .lost { min-height: 100svh; display: grid; place-items: center; text-align: center; padding: 24px; }
+    .lost .display { font-size: clamp(5rem, 22vw, 12rem); }
+    .lost p { margin: 12px auto 32px; max-width: 28rem; color: var(--muted); font-size: 17px; }
+    .lost .btn { margin: 0 auto; }
+  </style>
+</head>
+<body>
+  <main class="lost">
+    <div>
+      <p class="eyebrow" style="justify-content:center"><span>404</span>Not found</p>
+      <h1 class="display">Lost <em>signal.</em></h1>
+      <p>This page does not exist, or it moved. The rest of the site is one click away.</p>
+      <a class="btn btn-primary" href="/">Back to the portfolio</a>
+    </div>
+  </main>
+</body>
+</html>

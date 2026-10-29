@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="en-IE">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aditya Sharma · AI Engineer in Dublin</title>
+  <meta name="description" content="Aditya Sharma is an AI engineer and MSc AI student in Dublin who builds LLM agents, RAG systems and data pipelines, with a background in bioinformatics research at IIT Bombay.">
+  <link rel="canonical" href="https://aditya-00-9.github.io/">
+  <meta name="author" content="Aditya Sharma">
+  <meta name="theme-color" content="#0b0d10" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f6f4ef" media="(prefers-color-scheme: light)">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aditya-00-9.github.io/">
+  <meta property="og:title" content="Aditya Sharma · From genomes to agents">
+  <meta property="og:description" content="AI engineer in Dublin building LLM agents, RAG systems and data pipelines. Projects, experience and contact.">
+  <meta property="og:image" content="https://aditya-00-9.github.io/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script>
+    // Set the theme before first paint so there is no flash.
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem('theme'); } catch (e) {}
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+      document.documentElement.classList.add('js');
+    })();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Aditya Sharma",
+    "url": "https://aditya-00-9.github.io/",
+    "jobTitle": "AI Engineer",
+    "address": { "@type": "PostalAddress", "addressLocality": "Dublin", "addressCountry": "IE" },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "National College of Ireland" },
+      { "@type": "CollegeOrUniversity", "name": "D.Y. Patil Deemed to be University" }
+    ],
+    "sameAs": [
+      "https://github.com/Aditya-00-9",
+      "https://www.linkedin.com/in/aditya-sharma-035483288"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-github" viewBox="0 0 16 16"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></g></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7M9 7h8v8"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></g></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></g></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h8"/></g></symbol>
+  </svg>
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav" id="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top" aria-label="Aditya Sharma, back to top">
+        <span class="brand-mark" aria-hidden="true">AS</span>
+        <span class="brand-name">Aditya Sharma</span>
+      </a>
+      <nav class="nav-links" id="nav-links" aria-label="Sections">
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#toolkit">Toolkit</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch colour theme">
+          <svg class="i-sun"><use href="#i-sun"/></svg>
+          <svg class="i-moon"><use href="#i-moon"/></svg>
+        </button>
+        <button class="icon-btn menu-btn" id="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <canvas class="landscape" id="landscape" aria-hidden="true"></canvas>
+      <div class="wrap hero-inner">
+        <p class="kicker reveal"><span class="pulse" aria-hidden="true"></span>Dublin, Ireland · MSc Artificial Intelligence, National College of Ireland</p>
+        <h1 class="display reveal">From genomes<br>to <em>agents.</em></h1>
+        <p class="lead reveal">I'm <strong>Aditya Sharma</strong>, an AI engineer in Dublin. I build LLM agents, retrieval systems and data pipelines. I started in bioinformatics, analysing around 10,000 cancer mutations at IIT&nbsp;Bombay, so I test my models the way I was taught to test a hypothesis.</p>
+        <div class="hero-cta reveal">
+          <a class="btn btn-primary" href="#work">See my work</a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+          <span class="socials">
+            <a class="icon-link" href="https://github.com/Aditya-00-9" target="_blank" rel="noopener" aria-label="GitHub"><svg><use href="#i-github"/></svg></a>
+            <a class="icon-link" href="https://www.linkedin.com/in/aditya-sharma-035483288" target="_blank" rel="noopener" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
+            <a class="icon-link js-email" href="#contact" aria-label="Email"><svg><use href="#i-mail"/></svg></a>
+          </span>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <dl class="stats reveal">
+          <div class="stat">
+            <dt><span class="num">5<sup>th</sup></span></dt>
+            <dd>of 7,700+ participants at the IIT Hyderabad National AI/ML Hackathon 2026</dd>
+          </div>
+          <div class="stat">
+            <dt><span class="num">~10k</span></dt>
+            <dd>TP53 mutations analysed for my thesis research at IIT Bombay</dd>
+          </div>
+          <div class="stat">
+            <dt><span class="num">14<small>mo</small></span></dt>
+            <dd>full-time developer experience across two companies</dd>
+          </div>
+          <div class="stat">
+            <dt><span class="num">3</span></dt>
+            <dd>live AI products you can try on this page</dd>
+          </div>
+        </dl>
+        <p class="now reveal"><span class="now-tag">Now</span>Studying for an MSc in AI and building a galaxy classifier that has to hold up under distribution shift.</p>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span>01</span>Work</p>
+          <h2 id="work-title">Projects</h2>
+          <p class="section-sub">Things I have built, most with public code. Three have live demos you can open right now.</p>
+        </header>
+
+        <div class="filters reveal" role="group" aria-label="Filter projects">
+          <button type="button" class="chip is-active" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" class="chip" data-filter="ai" aria-pressed="false">AI &amp; agents</button>
+          <button type="button" class="chip" data-filter="web" aria-pressed="false">Full-stack</button>
+          <button type="button" class="chip" data-filter="data" aria-pressed="false">Data &amp; research</button>
+        </div>
+
+        <div class="projects">
+          <!-- IntelliCredit -->
+          <article class="card card-wide reveal" data-cat="ai data">
+            <div class="viz" aria-hidden="true">
+              <svg viewBox="0 0 560 240" class="viz-svg">
+                <g class="v-docs">
+                  <g transform="translate(36 46)">
+                    <rect class="v-paper" width="92" height="118" rx="8"/>
+                    <path class="v-rule" d="M16 26h60M16 40h48M16 54h56M16 68h36M16 82h52M16 96h40"/>
+                    <text class="v-label" x="0" y="140">annual report</text>
+                  </g>
+                  <g transform="translate(56 30)" opacity=".55"><rect class="v-paper-back" width="92" height="118" rx="8"/></g>
+                  <g transform="translate(76 14)" opacity=".3"><rect class="v-paper-back" width="92" height="118" rx="8"/></g>
+                </g>
+                <path class="v-flow" d="M190 106h56"/>
+                <path class="v-acc-stroke" d="M240 100l8 6-8 6"/>
+                <text class="v-code" x="262" y="62">{</text>
+                <text class="v-code" x="276" y="84">"revenue": …,</text>
+                <text class="v-code" x="276" y="104">"ebitda": …,</text>
+                <text class="v-code" x="276" y="124">"debt_equity": …,</text>
+                <text class="v-code" x="276" y="144">"dscr": …</text>
+                <text class="v-code" x="262" y="166">}</text>
+                <g transform="translate(436 58)">
+                  <text class="v-label" x="0" y="-12">shap</text>
+                  <rect class="v-bar-acc" x="40" y="0" width="64" height="12" rx="3"/>
+                  <rect class="v-bar-acc" x="40" y="22" width="44" height="12" rx="3"/>
+                  <rect class="v-bar-muted" x="12" y="44" width="28" height="12" rx="3"/>
+                  <rect class="v-bar-acc" x="40" y="66" width="26" height="12" rx="3"/>
+                  <rect class="v-bar-muted" x="22" y="88" width="18" height="12" rx="3"/>
+                  <path class="v-axis" d="M40 -4v112"/>
+                  <text class="v-label" x="0" y="132">xgboost score</text>
+                </g>
+              </svg>
+              <span class="badge">5th of 7,700+ · IIT Hyderabad</span>
+            </div>
+            <div class="card-body">
+              <p class="card-meta">Hackathon · team of 3 · 2026</p>
+              <h3>IntelliCredit</h3>
+              <p>An AI credit-analysis pipeline for Indian small businesses. It reads annual reports, bank statements and GST filings and turns them into a credit health dashboard.</p>
+              <ul class="points">
+                <li>Parses PDF, CSV, Excel and DOCX with pdfplumber and PyMuPDF, with Tesseract OCR for scanned pages.</li>
+                <li>Claude extracts metrics as structured JSON; a regex analyser and derived-metrics engine take over when the API is unavailable.</li>
+                <li>XGBoost credit scoring with SHAP explanations; handles lakh/crore units and bracketed negatives.</li>
+              </ul>
+              <ul class="tags"><li>Python</li><li>Claude API</li><li>XGBoost</li><li>SHAP</li><li>Tesseract</li><li>Flask</li><li>TypeScript</li></ul>
+              <div class="card-links">
+                <a href="https://github.com/Aditya-00-9/IntelliCredit" target="_blank" rel="noopener"><svg><use href="#i-github"/></svg>Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Interview Buddy -->
+          <article class="card reveal" data-cat="ai web">
+            <div class="viz" aria-hidden="true">
+              <svg viewBox="0 0 400 240" class="viz-svg">
+                <g transform="translate(110 120)">
+                  <ellipse class="v-face" rx="58" ry="74"/>
+                  <g class="v-mesh">
+                    <circle cx="-22" cy="-16" r="3"/><circle cx="22" cy="-16" r="3"/>
+                    <circle cx="-34" cy="-18" r="1.6"/><circle cx="-10" cy="-18" r="1.6"/><circle cx="10" cy="-18" r="1.6"/><circle cx="34" cy="-18" r="1.6"/>
+                    <circle cx="0" cy="4" r="1.6"/><circle cx="-6" cy="14" r="1.6"/><circle cx="6" cy="14" r="1.6"/>
+                    <circle cx="-44" cy="10" r="1.4"/><circle cx="44" cy="10" r="1.4"/><circle cx="-40" cy="36" r="1.4"/><circle cx="40" cy="36" r="1.4"/>
+                  </g>
+                  <path class="v-acc-stroke" d="M-20 34q20 16 40 0"/>
+                  <path class="v-gaze" d="M-22 -16 L-22 -60 M22 -16 L22 -60"/>
+                </g>
+                <g class="v-wave" transform="translate(206 120)">
+                  <rect x="0" y="-8" width="6" height="16" rx="3"/><rect x="12" y="-20" width="6" height="40" rx="3"/><rect x="24" y="-34" width="6" height="68" rx="3"/><rect x="36" y="-14" width="6" height="28" rx="3"/><rect x="48" y="-26" width="6" height="52" rx="3"/><rect x="60" y="-40" width="6" height="80" rx="3"/><rect x="72" y="-18" width="6" height="36" rx="3"/><rect x="84" y="-28" width="6" height="56" rx="3"/><rect x="96" y="-10" width="6" height="20" rx="3"/><rect x="108" y="-22" width="6" height="44" rx="3"/><rect x="120" y="-6" width="6" height="12" rx="3"/><rect x="132" y="-16" width="6" height="32" rx="3"/><rect x="144" y="-4" width="6" height="8" rx="3"/>
+                </g>
+                <text class="v-label" x="200" y="226" text-anchor="middle">eye contact · smiling · pace · filler words</text>
+              </svg>
+              <span class="badge badge-live">Live demo</span>
+            </div>
+            <div class="card-body">
+              <p class="card-meta">Hackathon build · 2026</p>
+              <h3>Interview Buddy</h3>
+              <p>An AI mock interviewer you talk to on camera. It researches how the role is interviewed, asks questions by voice and reports on your delivery.</p>
+              <ul class="points">
+                <li>Tracks eye contact and smiling with MediaPipe Face Landmarker, plus pace and filler words.</li>
+                <li>A per-role dashboard charts progress across sessions.</li>
+              </ul>
+              <ul class="tags"><li>FastAPI</li><li>Claude API</li><li>MediaPipe</li><li>Web Speech API</li><li>Chart.js</li></ul>
+              <div class="card-links">
+                <a href="https://interview-buddy-zeta-bice.vercel.app" target="_blank" rel="noopener"><svg><use href="#i-arrow"/></svg>Live demo</a>
+                <a href="https://github.com/Aditya-00-9/interview-buddy" target="_blank" rel="noopener"><svg><use href="#i-github"/></svg>Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Repositioning Intelligence -->
+          <article class="card reveal" data-cat="web data">
+            <div class="viz" aria-hidden="true">
+              <svg viewBox="0 0 400 240" class="viz-svg">
+                <g class="v-edges">
+                  <path d="M92 70 L196 118 L300 64 M196 118 L156 190 M196 118 L276 178 M92 70 L156 190 M300 64 L276 178 M60 150 L156 190 M60 150 L92 70 M340 132 L276 178 M340 132 L300 64"/>
+                </g>
+                <circle class="v-node-acc" cx="196" cy="118" r="16"/>
+                <circle class="v-node" cx="92" cy="70" r="11"/>
+                <circle class="v-node" cx="300" cy="64" r="11"/>
+                <rect class="v-node" x="146" y="180" width="20" height="20" rx="4"/>
+                <rect class="v-node" x="266" y="168" width="20" height="20" rx="4"/>
+                <path class="v-node-alt" d="M60 140l10 10-10 10-10-10z"/>
+                <path class="v-node-alt" d="M340 122l10 10-10 10-10-10z"/>
+                <text class="v-label" x="216" y="112">drug</text>
+                <text class="v-label" x="66" y="52">disease</text>
+                <text class="v-label" x="282" y="46">disease</text>
+                <text class="v-label" x="128" y="220">target</text>
+                <text class="v-label" x="18" y="182">evidence</text>
+              </svg>
+              <span class="badge badge-live">Live demo</span>
+            </div>
+            <div class="card-body">
+              <p class="card-meta">Solo project · 2026</p>
+              <h3>Repositioning Intelligence</h3>
+              <p>A research platform for drug repurposing that links drugs, diseases, molecular targets and evidence records in one place.</p>
+              <ul class="points">
+                <li>AI summaries per drug–disease pair are reviewed by a person and graded, with citations from PubMed, ClinicalTrials.gov and FDA labels.</li>
+                <li>Confidence scoring and a reviewer login with an audit trail. Built for generating hypotheses, not for patient care.</li>
+              </ul>
+              <ul class="tags"><li>Next.js</li><li>TypeScript</li><li>React</li><li>Prisma</li><li>Tailwind</li><li>Vitest</li><li>Playwright</li></ul>
+              <div class="card-links">
+                <a href="https://drug-repositioning-platform.vercel.app" target="_blank" rel="noopener"><svg><use href="#i-arrow"/></svg>Live demo</a>
+                <a href="https://github.com/Aditya-00-9/drug-repositioning-platform" target="_blank" rel="noopener"><svg><use href="#i-github"/></svg>Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- p53 -->
+          <article class="card card-wide card-research reveal" data-cat="data">
+            <div class="viz viz-figs">
+              <figure>
+                <img src="assets/img/fig1_fitness_distribution.png" alt="Histogram of relative fitness scores for p53 variants, showing two peaks" width="720" height="720" loading="lazy">
+              </figure>
+              <div class="epi" role="img" aria-label="Epistasis across 797 mutation pairs: 535 negative, 160 none, 52 sign, 50 positive">
+                <p class="epi-head"><span class="epi-n">797</span> mutation pairs scanned for epistasis</p>
+                <div class="epi-bar" aria-hidden="true">
+                  <span style="--w:535" class="e-neg"></span><span style="--w:160" class="e-none"></span><span style="--w:52" class="e-sign"></span><span style="--w:50" class="e-pos"></span>
+                </div>
+                <ul class="epi-legend" aria-hidden="true">
+                  <li><i class="e-neg"></i>Negative <b>535</b></li>
+                  <li><i class="e-none"></i>None <b>160</b></li>
+                  <li><i class="e-sign"></i>Sign <b>52</b></li>
+                  <li><i class="e-pos"></i>Positive <b>50</b></li>
+                </ul>
+              </div>
+              <span class="badge">Thesis graded O (10/10)</span>
+            </div>
+            <div class="card-body">
+              <p class="card-meta">Research · IIT Bombay · 2025</p>
+              <h3>The fitness landscape of p53 mutations</h3>
+              <p>My BTech thesis, carried out at IIT Bombay under Prof. Supreet Saini. I analysed how ~10,000 mutations in <em>TP53</em>, the most frequently mutated gene in human cancer, change cancer-cell fitness.</p>
+              <ul class="points">
+                <li>Gaussian mixture models show a two-peaked fitness landscape; KS, Mann–Whitney U and Cohen's d compare mutation classes.</li>
+                <li>Some "silent" synonymous mutations still change fitness; a sliding-window codon adaptation index maps fast and slow translating regions.</li>
+                <li>Exhaustive epistasis scan of 797 mutation pairs: 535 negative, 160 none, 52 sign and 50 positive.</li>
+                <li>Reproducible: GitHub Actions re-runs every notebook on each push, and each one opens in Colab.</li>
+              </ul>
+              <ul class="tags"><li>Python</li><li>pandas</li><li>NumPy</li><li>SciPy</li><li>scikit-learn</li><li>GitHub Actions</li></ul>
+              <div class="card-links">
+                <a href="https://github.com/Aditya-00-9/p53-fitness-landscape" target="_blank" rel="noopener"><svg><use href="#i-github"/></svg>Code</a>
+                <a href="https://github.com/Aditya-00-9/p53-fitness-landscape/blob/main/docs/thesis_p53_fitness_landscape.pdf" target="_blank" rel="noopener"><svg><use href="#i-doc"/></svg>Thesis (PDF)</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- carefully -->
+          <article class="card reveal" data-cat="ai web">
+            <div class="viz" aria-hidden="true">
+              <svg viewBox="0 0 400 240" class="viz-svg">
+                <g transform="translate(48 44)">
+                  <path class="v-bubble" d="M14 0h176a14 14 0 0 1 14 14v52a14 14 0 0 1-14 14H44l-20 18V80H14A14 14 0 0 1 0 66V14A14 14 0 0 1 14 0z"/>
+                  <g class="v-wave" transform="translate(26 40)">
+                    <rect x="0" y="-4" width="5" height="8" rx="2.5"/><rect x="10" y="-12" width="5" height="24" rx="2.5"/><rect x="20" y="-18" width="5" height="36" rx="2.5"/><rect x="30" y="-8" width="5" height="16" rx="2.5"/><rect x="40" y="-14" width="5" height="28" rx="2.5"/><rect x="50" y="-20" width="5" height="40" rx="2.5"/><rect x="60" y="-10" width="5" height="20" rx="2.5"/><rect x="70" y="-6" width="5" height="12" rx="2.5"/><rect x="80" y="-14" width="5" height="28" rx="2.5"/><rect x="90" y="-4" width="5" height="8" rx="2.5"/><rect x="100" y="-10" width="5" height="20" rx="2.5"/><rect x="110" y="-3" width="5" height="6" rx="2.5"/>
+                  </g>
+                </g>
+                <g transform="translate(150 136)">
+                  <path class="v-bubble-acc" d="M14 0h176a14 14 0 0 1 14 14v40a14 14 0 0 1-14 14h-10v16l-18-16H14A14 14 0 0 1 0 54V14A14 14 0 0 1 14 0z"/>
+                  <path class="v-rule" d="M18 24h120M18 42h84"/>
+                  <circle class="v-node-acc" cx="178" cy="34" r="9"/>
+                  <path class="v-check" d="M174 34l3 3 6-6"/>
+                </g>
+              </svg>
+              <span class="badge badge-live">Live demo</span>
+            </div>
+            <div class="card-body">
+              <p class="card-meta">Prototype · 2026</p>
+              <h3>carefully</h3>
+              <p>A multilingual, voice-first care-navigation prototype. It helps people put what they are feeling into words and prepare to talk to a clinician. It does not diagnose.</p>
+              <ul class="points">
+                <li>Nothing goes to the AI model without explicit consent; a deterministic emergency-phrase check runs independently of it.</li>
+                <li>A Vercel serverless function calls Cerebras inference, keeping the API key off the browser.</li>
+              </ul>
+              <ul class="tags"><li>JavaScript</li><li>Web Speech API</li><li>Vercel Functions</li><li>Cerebras</li></ul>
+              <div class="card-links">
+                <a href="https://carefully-care-navigation.vercel.app" target="_blank" rel="noopener"><svg><use href="#i-arrow"/></svg>Live demo</a>
+                <a href="https://github.com/Aditya-00-9/carefully-care-navigation" target="_blank" rel="noopener"><svg><use href="#i-github"/></svg>Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Lead pipeline -->
+          <article class="card reveal" data-cat="ai data">
+            <div class="viz" aria-hidden="true">
+              <svg viewBox="0 0 400 240" class="viz-svg">
+                <path class="v-track" d="M44 120H356"/>
+                <path class="v-track-flow" d="M44 120H356"/>
+                <g class="v-stages">
+                  <g transform="translate(44 120)"><circle r="20"/><text y="44">collect</text></g>
+                  <g transform="translate(122 120)"><circle r="20"/><text y="44">dedupe</text></g>
+                  <g transform="translate(200 120)"><circle class="is-acc" r="20"/><text y="44">enrich</text></g>
+                  <g transform="translate(278 120)"><circle r="20"/><text y="44">score</text></g>
+                  <g transform="translate(356 120)"><circle r="20"/><text y="44">digest</text></g>
+                </g>
+                <g class="v-stage-icons">
+                  <path d="M36 116h16M36 124h10"/>
+                  <path d="M114 114h16M114 120h16M114 126h8"/>
+                  <path d="M200 110l2.6 6.4 6.4 2.6-6.4 2.6-2.6 6.4-2.6-6.4-6.4-2.6 6.4-2.6z"/>
+                  <path d="M270 128v-6M278 128v-12M286 128v-8"/>
+                  <path d="M348 114h16v12h-16zM348 114l8 6 8-6"/>
+                </g>
+              </svg>
+            </div>
+            <div class="card-body">
+              <p class="card-meta">Pipeline · 2026</p>
+              <h3>Lead intelligence pipeline</h3>
+              <p>A daily pipeline that finds people unhappy with a competitor's product, ranks them as leads and hands a digest to a human for review.</p>
+              <ul class="points">
+                <li>Collects from web research, Reddit and RSS, removes duplicates by URL, content hash and fuzzy match, then enriches and scores with OpenAI.</li>
+                <li>Slack digests and Excel reports; FastAPI endpoints, health checks, Docker and CI on GitHub Actions.</li>
+              </ul>
+              <ul class="tags"><li>Python</li><li>FastAPI</li><li>PostgreSQL</li><li>OpenAI API</li><li>Docker</li><li>pytest</li></ul>
+              <div class="card-links">
+                <a href="https://github.com/Aditya-00-9/lead-generating-bot" target="_blank" rel="noopener"><svg><use href="#i-github"/></svg>Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="more reveal">
+          <h3 class="more-title">More I have built</h3>
+          <ul class="more-list">
+            <li data-cat="ai">
+              <span class="more-name">DRAP: Dublin Rental Application Processor</span>
+              <span class="more-desc">RPA plus a locally hosted LLaMA 3 agent that validates documents and ranks applicants, with a bias audit and a GDPR consent and deletion ledger.</span>
+              <span class="more-tags">MSc module project · LLaMA 3 · SQLite · Streamlit</span>
+            </li>
+            <li data-cat="ai">
+              <span class="more-name">Ghost AI</span>
+              <span class="more-desc">A local-first voice agent for Google Meet and Teams that hears its user's name and answers within five seconds.</span>
+              <span class="more-tags">Whisper · Llama 3.3 70B on Groq · edge-tts</span>
+            </li>
+            <li data-cat="data">
+              <span class="more-name">Real-time BTC prediction</span>
+              <span class="more-desc">Live market data from the Binance WebSocket API streamed through Kafka to a live prediction dashboard.</span>
+              <span class="more-tags">Team project · Kafka · Airflow · Docker Compose</span>
+            </li>
+            <li data-cat="data">
+              <span class="more-name">Air-quality forecasting (PM2.5)</span>
+              <span class="more-desc">Compared statistical, ML and deep-learning models; gradient boosting with pollutant features reached R² 0.9953, ahead of ARIMA, LSTM and AutoML.</span>
+              <span class="more-tags">Time series · gradient boosting · LSTM</span>
+            </li>
+            <li data-cat="ai">
+              <span class="more-name">Worker position and safety monitor</span>
+              <span class="more-desc">Indoor tracking from phone sensors with a Kalman filter, plus YOLOv8 floor-safety monitoring on a webcam feed.</span>
+              <span class="more-tags">YOLOv8 · OpenCV · Flask</span>
+            </li>
+            <li data-cat="web">
+              <span class="more-name"><a href="https://github.com/Aditya-00-9/KramaAI" target="_blank" rel="noopener">KramaAI marketing site <svg><use href="#i-arrow"/></svg></a></span>
+              <span class="more-desc">A static marketing site for a business management product: pricing, FAQ, demo booking and legal pages.</span>
+              <span class="more-tags">HTML · CSS · JavaScript · Vercel</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience" aria-labelledby="exp-title">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span>02</span>Experience</p>
+          <h2 id="exp-title">Where I have worked</h2>
+        </header>
+
+        <ol class="timeline">
+          <li class="role reveal">
+            <div class="role-when">Mar 2026 – Aug 2026<span>Remote</span></div>
+            <div class="role-body">
+              <h3>Developer <span class="at">· Code Ninjas HQ</span></h3>
+              <p>Joined as a junior developer reporting to the CTO, working on an AI-powered business management system for multi-location franchises.</p>
+              <ul class="points">
+                <li>Built an all-in-one chatbot in Django that adapts to any business and answers from that business's own data, using MCP servers and vector databases.</li>
+                <li>Built chatbot and agent workflows (intent classification, entity extraction, conversation context, API routing, fallbacks) and RAG with semantic retrieval and reranking.</li>
+                <li>Built the React and Node.js website that sells the product, including the purchase-to-onboarding flow, plus data pipelines for event discovery and lead scoring.</li>
+              </ul>
+              <ul class="tags"><li>Django</li><li>MCP</li><li>RAG</li><li>Vector databases</li><li>React</li><li>Node.js</li><li>Azure</li></ul>
+            </div>
+          </li>
+          <li class="role reveal">
+            <div class="role-when">Jul 2025 – Feb 2026<span>Mumbai</span></div>
+            <div class="role-body">
+              <h3>Developer <span class="at">· Ambarnath Transformers &amp; Electricals</span></h3>
+              <p>Worked directly with the CEO, Director and owner of an electrical transformer manufacturer.</p>
+              <ul class="points">
+                <li>Built an analytics dashboard that combines Python web scraping with ML classification to surface relevant public tenders.</li>
+                <li>Produced weekly Power BI insight reports for senior staff from analysis of internal company data.</li>
+                <li>Built the company's first website end to end and set up its hosting, releases and CI/CD.</li>
+              </ul>
+              <ul class="tags"><li>Python</li><li>Web scraping</li><li>Machine learning</li><li>Power BI</li><li>JavaScript</li><li>CI/CD</li></ul>
+            </div>
+          </li>
+          <li class="role reveal">
+            <div class="role-when">Dec 2024 – Jun 2025<span>Mumbai</span></div>
+            <div class="role-body">
+              <h3>Data Analysis &amp; Research Intern <span class="at">· IIT Bombay</span></h3>
+              <p>Statistical analysis of a public p53 mutation library (GEO GSE115072) for my BTech thesis, supervised by Prof. Supreet Saini, Department of Chemical Engineering. <a href="#work" class="inline-link">See the project</a>.</p>
+              <ul class="tags"><li>Python</li><li>pandas</li><li>Statistical modelling</li><li>Genomics</li></ul>
+            </div>
+          </li>
+          <li class="role reveal">
+            <div class="role-when">Jul 2023 – Dec 2024<span>Navi Mumbai</span></div>
+            <div class="role-body">
+              <h3>Data Science Intern <span class="at">· D.Y. Patil University</span></h3>
+              <ul class="points">
+                <li>Research under the Head of Bioinformatics on nutrient-based antiviral molecules against flaviviruses, using molecular docking and literature analysis; presented a poster at ICBSSF, an international conference.</li>
+                <li>Built psoriasis image classifiers on 1,000+ labelled images and assisted with deep-learning research and manuscript preparation.</li>
+              </ul>
+              <ul class="tags"><li>Deep learning</li><li>Molecular docking</li><li>Computational biology</li></ul>
+            </div>
+          </li>
+          <li class="role reveal">
+            <div class="role-when">Dec 2023 – Jan 2024<span>Remote</span></div>
+            <div class="role-body">
+              <h3>Data Science Intern <span class="at">· NullClass</span></h3>
+              <p>Built end-to-end NLP pipelines for emotion classification from text and voice, and benchmarked LSTMs against transformer models.</p>
+              <ul class="tags"><li>NLP</li><li>LSTM</li><li>Transformers</li></ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Toolkit -->
+    <section class="section" id="toolkit" aria-labelledby="tool-title">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span>03</span>Toolkit</p>
+          <h2 id="tool-title">What I work with</h2>
+        </header>
+        <div class="skills">
+          <div class="skill reveal">
+            <h3>AI &amp; LLMs</h3>
+            <ul class="tags"><li>AI agents</li><li>RAG</li><li>MCP servers</li><li>Vector databases</li><li>Reranking</li><li>Prompt engineering</li><li>Structured outputs</li><li>Claude API</li><li>OpenAI API</li><li>Llama 3</li><li>Whisper</li><li>LLM fine-tuning</li></ul>
+          </div>
+          <div class="skill reveal">
+            <h3>Machine learning</h3>
+            <ul class="tags"><li>scikit-learn</li><li>PyTorch</li><li>XGBoost</li><li>SHAP</li><li>CNNs</li><li>LSTMs &amp; transformers</li><li>YOLOv8</li><li>OpenCV</li><li>NLP</li><li>Time series</li></ul>
+          </div>
+          <div class="skill reveal">
+            <h3>Data &amp; statistics</h3>
+            <ul class="tags"><li>pandas</li><li>NumPy</li><li>SciPy</li><li>Hypothesis testing</li><li>Gaussian mixtures</li><li>ETL pipelines</li><li>Web scraping</li><li>Kafka</li><li>Airflow</li><li>Power BI</li><li>Snowflake</li></ul>
+          </div>
+          <div class="skill reveal">
+            <h3>Back end &amp; web</h3>
+            <ul class="tags"><li>Python</li><li>Django</li><li>FastAPI</li><li>Flask</li><li>REST APIs</li><li>Node.js</li><li>React</li><li>Next.js</li><li>TypeScript</li><li>Tailwind CSS</li><li>Streamlit</li></ul>
+          </div>
+          <div class="skill reveal">
+            <h3>Data stores &amp; cloud</h3>
+            <ul class="tags"><li>PostgreSQL</li><li>MongoDB</li><li>SQLite</li><li>Prisma</li><li>SQL</li><li>Azure</li><li>Vercel</li><li>Docker</li><li>GitHub Actions</li><li>CI/CD</li></ul>
+          </div>
+          <div class="skill reveal">
+            <h3>Bioinformatics</h3>
+            <ul class="tags"><li>Genomic mutation analysis</li><li>Molecular docking</li><li>Computational biology</li><li>PubMed &amp; ClinicalTrials.gov</li><li>R</li><li>Java &amp; BioJava</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="wrap about">
+        <div class="about-text reveal">
+          <p class="eyebrow"><span>04</span>About</p>
+          <h2 id="about-title">A scientist's habits, an engineer's job.</h2>
+          <p>I grew up in a family of doctors and studied bioinformatics and data science, which meant learning to distrust a result until the statistics backed it. My thesis at IIT Bombay was months of exactly that: thousands of mutations, careful tests, and figures that had to survive questions.</p>
+          <p>Since then I have mostly been building: chatbots and agents that answer from a company's own data, pipelines that clean and rank messy web data, and small products people can try. I like work where the AI has to be useful and checkable at the same time.</p>
+          <p>I am now doing an MSc in Artificial Intelligence at the National College of Ireland, including a module on data governance, ethics and sustainability. Outside code, you will find me at the gym six days a week.</p>
+        </div>
+        <div class="edu reveal">
+          <h3 class="edu-title">Education</h3>
+          <div class="edu-item">
+            <p class="edu-when">2026 – 2027 · in progress</p>
+            <h4>MSc Artificial Intelligence</h4>
+            <p class="edu-where">National College of Ireland, Dublin</p>
+            <p class="edu-note">Machine Learning · Principles of AI · Programming for AI · Data Governance, Ethics and Sustainability</p>
+          </div>
+          <div class="edu-item">
+            <p class="edu-when">2021 – 2025</p>
+            <h4>BTech Bioinformatics and Data Science</h4>
+            <p class="edu-where">D.Y. Patil Deemed to be University, Navi Mumbai</p>
+            <p class="edu-note">Thesis carried out at IIT Bombay, graded O (10/10)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <div class="contact-card reveal">
+          <p class="eyebrow"><span>05</span>Contact</p>
+          <h2 id="contact-title">Let's build something <em>useful.</em></h2>
+          <p>I'm open to graduate and junior roles in AI engineering, data and software, and to research collaborations. Email is the quickest way to reach me.</p>
+          <div class="contact-actions">
+            <a class="btn btn-primary js-email" href="#contact"><svg><use href="#i-mail"/></svg><span class="js-email-text">Email me</span></a>
+            <button class="btn btn-ghost" type="button" id="copy-email"><svg><use href="#i-copy"/></svg><span>Copy address</span></button>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/aditya-sharma-035483288" target="_blank" rel="noopener"><svg><use href="#i-linkedin"/></svg>LinkedIn</a>
+            <a class="btn btn-ghost" href="https://github.com/Aditya-00-9" target="_blank" rel="noopener"><svg><use href="#i-github"/></svg>GitHub</a>
+          </div>
+          <noscript><p class="noscript">Email: hiadityasharma09 at gmail dot com</p></noscript>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <p>© <span id="year">2026</span> Aditya Sharma</p>
+      <p>Plain HTML, CSS and JavaScript · hosted on GitHub Pages</p>
+      <a href="#top" class="to-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
